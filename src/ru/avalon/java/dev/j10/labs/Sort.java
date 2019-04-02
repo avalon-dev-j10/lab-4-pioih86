@@ -19,7 +19,7 @@ public interface Sort {
      *
      * @param array массив, подлежащий сортировке
      */
-    void sort(Object[] array);
+    void sort(Person[] array);
 
     /**
      * Выполняет сортировку массива сравниваемых объектов.
