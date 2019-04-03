@@ -2,6 +2,8 @@ package ru.avalon.java.dev.j10.labs;
 
 import java.time.LocalDate;
 
+//Реализация интерфейса Person
+
 public class Human implements Person {
     
     String name;

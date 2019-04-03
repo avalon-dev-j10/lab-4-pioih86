@@ -1,11 +1,13 @@
 package ru.avalon.java.dev.j10.labs;
 import java.util.Comparator;
 
+//Компаратор строк
+
 public class StringComparator implements Comparator<String>{
     
-    boolean up;
+    boolean up;                                     //Направление сортировки
 
-    public StringComparator() {
+    public StringComparator() {                     
         up = true;
     }
 

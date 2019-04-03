@@ -2,6 +2,8 @@ package ru.avalon.java.dev.j10.labs;
 import java.util.Arrays;
 import java.util.Comparator;
 
+//Класс сортировки
+
 public class SortPerson implements Sort{
     
     public void sort(Person[] persons){
