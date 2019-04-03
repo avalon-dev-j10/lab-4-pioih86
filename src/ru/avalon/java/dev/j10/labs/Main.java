@@ -68,10 +68,7 @@ public class Main {
          */
         Sort sort = new SortPerson();
         
-        sort.sort(persons);
-        for ( int i = 0; i < persons.length; i++){
-            System.out.println(persons[i].getName());
-        }
+        
        
      
 
@@ -85,7 +82,7 @@ public class Main {
          * 2. Проинициализируйте переменную comparator
          *    экземпляром созданного класса.
          */
-        Comparator comparator = null;
+        Comparator comparator = new StringComparator(false);
 
         /*
          * TODO(Студент): Отсортируйте массив persons по возрастанию
@@ -98,6 +95,10 @@ public class Main {
          *    что массив отсортирован по возрастанию.
          */
 //        sort.sort(persons);
+        sort.sort(persons);
+        for ( int i = 0; i < persons.length; i++){
+            System.out.println(persons[i].getName());
+        }
 
         /*
          * TODO(Студент): Отсортируйте массив strings по возрастанию
@@ -109,7 +110,10 @@ public class Main {
          * 2. С использованием отладчика убедитесь в том,
          *    что массив отсортирован по возрастанию.
          */
-//        sort.sort(strings);
+        sort.sort(strings);
+//        for ( int i = 0; i < strings.length; i++){
+//            System.out.println(strings[i]);
+//        }
 
         /*
          * TODO(Студент): Отсортируйте массив strings по убыванию
@@ -120,6 +124,9 @@ public class Main {
          * 2. С использованием отладчика убедитесь в том,
          *    что массив отсортирован по убыванию.
          */
-//        sort.sort(strings, comparator);
+        sort.sort(strings, comparator);
+        for ( int i = 0; i < strings.length; i++){
+            System.out.println(strings[i]);
+        }
     }
 }

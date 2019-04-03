@@ -33,7 +33,6 @@ public class Human implements Person {
             return -1;
         }
         return 0;
-//        return (this.getName().compareTo(human.getName()));
     }
         
 }
